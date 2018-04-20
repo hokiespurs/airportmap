@@ -145,7 +145,7 @@ function statestyle(feature) {
 
 #### Generate Legend
 
-![Legend](https://github.com/hokiespurs/airportmap/blob/master/img/example_legend.png)
+![Legend](https://github.com/hokiespurs/airportmap/blob/master/img/example_legend.PNG)
 
 **main.css**
 
