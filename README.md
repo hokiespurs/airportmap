@@ -101,10 +101,20 @@ var airport_levels = [5000, 10000, 50000, 100000, 500000, 1000000, 10000000];
     },
 ```
 
-The attribution at the bottom of the map is added to indicate the sources of the data, and the author of the map. 
-
+The attribution at the bottom of the map is added to indicate the sources of the data, the author of the map, and a link to this github page.   
+**main.css**
+```css
+#credits {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+```
+**main.js**
 ```javascript
-    attribution: 'Airport Data &copy; USGS | US States &copy; Mike Bostocks | Basemap &copy; CartoDB | Made By Richie Slocum'
+    attribution: '<div id="credits" style="display:inline">Airport Data &copy; USGS | US States &copy; Mike Bostocks | Basemap &copy; CartoDB | Made By Richie Slocum | <a href="https://github.com/hokiespurs/airportmap"><i class="fa fa-github"></i> View On Github </a></div>'
 ```
 
 ### Load and visualize geojson of US state data 
