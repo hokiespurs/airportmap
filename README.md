@@ -55,7 +55,7 @@ var mymap = L.map('map', {
 ```
 
 **main.js**
-First, a colormap is generated and added to the head as `css` styles named `.marker-color-<1-9>` to so that the markers may be colored easily. A color offset is used to skip the first very light color in the colormap.
+First, a colormap is generated using [chroma.js](https://github.com/gka/chroma.js/) and added to the head as `css` styles named `.marker-color-<1-9>` to so that the markers may be colored easily. A color offset is used to skip the first very light color in the colormap.
 ``` javascript
 // Generate Colormap
 var coloroffset = 2; // skip first yellow colormaps
@@ -67,7 +67,7 @@ for (i = 0; i < 8; i++) {
 }
 ```
 
-Then, the airport geojson is loaded and added to the map using the Leaflet geoJson functionality.
+Then, the airport geojson is loaded using [leaflet-ajax](https://github.com/calvinmetcalf/leaflet-ajax) and added to the map using the Leaflet geoJson functionality.
 
 ```js
 airports= L.geoJson.ajax("assets/airports.geojson",{
@@ -256,3 +256,16 @@ The repository is structured based on the following folder structure.
     |-- js
         |-- main.js
 ```
+
+## Attribution
+### Data Sources
+- Airport data downloaded from [USGS](https://www.sciencebase.gov/catalog/item/581d0516e4b08da350d52379)
+- US States from [Mike Bostocks](https://bost.ocks.org/mike/)
+
+### Libraries
+- Map functionality from [Leaflet](http://leafletjs.com/)
+- Icons from [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free)
+- Font from [google](https://fonts.google.com/specimen/Titillium+Web)
+- geojson loading from [Leaflet-ajax](https://github.com/calvinmetcalf/leaflet-ajax)
+- javascript enhancement using [jQuery](https://jquery.com/)
+- Colormap from [chroma.js](https://gka.github.io/chroma.js/)
