@@ -1,5 +1,5 @@
 # Airport Map of the USA (airportmap)
-### Overview
+## Overview
 
 This project demonstrates using Leaflet to visualize the airports in the United States.  Each airport is indicated by an airplane shaped marker which is colored by the number of enplanements per year.  The size of the airplane marker indicates whether the airport has a tower.  A polygon representing each state is overlaid on the basemap, where the color indicates the number of airports in each state.
 
@@ -9,7 +9,7 @@ This project demonstrates using Leaflet to visualize the airports in the United 
 
 ## Functionality
 
-#### Map Initialization
+### Map Initialization
 
 The mapping functionality is implemented using the [Leaflet](http://leafletjs.com/) Javascript library, and initialized using an `L.map('map',args)` call in `main.js`.  The map placed in an html `<div>` element, which is set to take up the whole page using a style in `main.css`.
 
@@ -45,7 +45,7 @@ var mymap = L.map('map', {
 </body>
 ```
 
-#### Load and visualize geojson of airplane data
+### Load and visualize geojson of airplane data
 
 **main.css**
 
@@ -107,7 +107,7 @@ The attribution at the bottom of the map is added to indicate the sources of the
     attribution: 'Airport Data &copy; USGS | US States &copy; Mike Bostocks | Basemap &copy; CartoDB | Made By Richie Slocum'
 ```
 
-#### Load and visualize geojson of US state data 
+### Load and visualize geojson of US state data 
 
 **main.js**
 
@@ -143,7 +143,7 @@ function statestyle(feature) {
 }
 ```
 
-#### Generate Legend
+### Generate Legend
 
 ![Legend](https://github.com/hokiespurs/airportmap/blob/master/img/example_legend.PNG)
 
@@ -231,7 +231,7 @@ function airplaneLegend(i,low,high){
 legend.addTo(mymap);
 ```
 
-#### Add Scalebar
+### Add Scalebar
 
 **main.js**
 
