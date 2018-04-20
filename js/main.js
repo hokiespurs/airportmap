@@ -40,7 +40,7 @@ airports= L.geoJson.ajax("assets/airports.geojson",{
 
         return L.marker(latlng, {icon: L.divIcon({className: 'fa fa-plane ' + markerclass + ' marker-color-' + (i +1).toString()})});
     },
-    attribution: 'Airport Data &copy; USGS | US States &copy; Mike Bostocks | Basemap &copy; CartoDB | Made By Richie Slocum'
+    attribution: '<div id="credits" style="display:inline">Airport Data &copy; USGS | US States &copy; Mike Bostocks | Basemap &copy; CartoDB | Made By Richie Slocum | <a href="https://github.com/hokiespurs/airportmap"><i class="fa fa-github"></i> View On Github </a></div>'
 });
 
 airports.addTo(mymap);
