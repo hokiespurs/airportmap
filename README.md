@@ -5,7 +5,7 @@ This project demonstrates using Leaflet to visualize the airports in the United 
 
 > Enplanement (def) : to board an airplane (www.dictionary.com)
 
-![Example Display](img\example.png)
+![Example Display](https://github.com/hokiespurs/airportmap/blob/master/img/example.png)
 
 ## Functionality
 
@@ -145,7 +145,7 @@ function statestyle(feature) {
 
 #### Generate Legend
 
-![Legend](img/example_legend.png)
+![Legend](https://github.com/hokiespurs/airportmap/blob/master/img/example_legend.png)
 
 **main.css**
 
